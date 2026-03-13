@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+        <!-- tr : 테이블 행(가로줄)을 만들어줌-->
+         <!--
+          colspan = "2" : 2개의 열을 합침(2칸짜리를 한번에 썼다는 것)
+          rowspan = '2' : 2개의 행을 합침
+          
+          -->
+        <tr><!-- 가로줄 1개. 오른쪽으로 쌓여서 들어감-->
+            <th colspan="2">지역별 홍차</th>
+        </tr>
+        <tr>
+            <th rowspan="3">중국</th>
+            <td>정산소종</td>
+        </tr>
+        <tr><td>기문</td></tr>
+        <tr><td>운남</td></tr>
+        <tr>
+            <th rowspan="4">인도 및 스리랑카</th>
+            <td>아삼</td>
+        </tr>
+        <tr><td>실론</td></tr>
+        <tr><td>다질링</td></tr>
+        <tr><td>닐기리</td></tr>
+    </table>
+  </body>
+</html>

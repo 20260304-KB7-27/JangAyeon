@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    form 태그 : 사용자로부터 입력을 받기 위한 양식을 만드는 태그(여러개를 한꺼번에 받을 수 있음)
+    action : 폼 데이터를 전송할 서버의 URL
+    method : 데이터 전송 방식 ( GET / POST )
+    -->
+    <form action="https://www.naver.com" method="get">
+      <fieldset style="width: 350px">
+        <legend>로그인</legend>
+        <table>
+          <tr>
+            <td><label for="userid">사용자ID</label></td>
+            <!--
+          input 태그
+          name : 서버로 전송될 때 사용되는 이름
+          id : html 요소의 고유 식별자
+          type : 입력필드의 종류-->
+            <td><input id="userid" name="userid" type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="pw">비밀번호</label></td>
+            <td><input id="pw" name="pw" type="text" /></td>
+          </tr>
+        </table>
+
+        <div style="margin-top: 10px">
+          <input type="submit" value="확인" />
+          <input type="reset" value="다시쓰기" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

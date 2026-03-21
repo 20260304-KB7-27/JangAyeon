@@ -1,0 +1,16 @@
+let msg = 'GLOBAL'; //전역스코프
+
+function outer() {
+  let msg = 'OUTER'; // 함수 스코프(지역)
+  console.log(msg); // OUTER
+  if (true) {
+    let msg = 'BLOCK';
+    console.log(msg); // BLOCK
+  }
+}
+
+outer();
+
+console.log(msg);
+
+//문제풀때는 composition 방식으로 해야 나중에 안 헷갈림
